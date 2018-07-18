@@ -1,0 +1,8 @@
+//////////////////////////////////////////////////////
+// Get the text from a certain element and do assertions
+/////////////////////////////////////////////////////
+
+cy
+  .get('.result-count-title')
+  .invoke('text')
+  .should('be.gt', '50.000')
